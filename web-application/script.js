@@ -160,7 +160,7 @@ $(function () {
         for (let i = 1; i < 8; i++) {
 
             $.ajax({
-                url: 'https://opendata.brussel.be/api/records/1.0/search/?dataset=stations-cambio0&q=&rows=26',
+                url: 'https://swapi.dev/api/planets/?page=' + i,
                 method: 'GET',
                 dataType: 'json',
             }).done(function (data) {
@@ -170,7 +170,9 @@ $(function () {
 
                 
 
-
+                for (let b of data.results) {
+                    $('#gallery').append(`<div id="pl"><img src="beelden/planets/${b.name}.jpg" alt="planet img"><h1 id="plName">${b.name}</h1></div>`)
+                }
 
 
 
