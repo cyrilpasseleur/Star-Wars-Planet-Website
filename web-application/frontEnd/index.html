@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- header&links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web application</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/stijlContent.css">
+    <link rel="stylesheet" type="text/css" href="css/animationsHover.css">
+    <link rel="stylesheet" type="text/css" href="css/stijlHome.css">
+    <link rel="stylesheet" type="text/css" href="css/gameCss.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+   
+    <!-- exploreNAV -->
+    <nav id="exploreNav">
+        <ul>
+              <img class="logo klein" src="beelden/logo.png" alt="logo">
+            <button class="navBut play"><div id="animateOne"></div><div id="animateTwo"></div>Play The Game</button>
+        </ul>
+    </nav>
+
+    <!-- gameNAV -->
+    <nav id="gameNav">
+            <button class="navBut exit"><div id="animateOne"></div><div id="animateTwo"></div>Quit The Game</button>    
+    </nav>
+
+    <!-- gameCURRENTCREW -->
+    <div id="crew"></div>
+
+    <!-- background videos -->
+    <video autoplay muted loop id="space4">
+        <source src="video/space4.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="video1">
+        <source src="video/video1.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="video2">
+        <source src="video/video2.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="video3">
+        <source src="video/video3.mp4" type="video/mp4">
+    </video>
+
+    <!-- homePAGE -->
+    <img class="logo groot" id="begin" src="beelden/logo.png" alt="logo">
+    <img class="xwing" src="beelden/xwing.png" alt="xwing">
+    <div id="buttons">
+        <button id="explore"><div id="animateOne"></div><div id="animateTwo"></div>Explore</button>
+        <button class="play" id="game"><div id="animateOne"></div><div id="animateTwo"></div>Play The Game</button>
+    </div>
+   
+    
+<div id="overlay"></div>
+<div id="noClick"></div>
+
+
+<!-- planetPOPUP -->
+<div id="popUpText"><div id="overlay2"></div>
+<img id="cross" src="beelden/cross.jpg">
+
+    <div id="popContent"></div>
+
+</div>
+
+<!-- planetGALLERY -->
+    <div id="content">
+            <input type="text" id="search" placeholder="Search Planet">
+            <div id="gallery">
+  
+            </div>
+        </div>
+
+
+<!-- gameCONTENT -->
+        <div id="gameContent">
+                <div id="overlay3"></div>
+            <div id="gameChose">
+                <p id="welcome"></p>
+                <p id="overload">Would you like to take someone onboard?</p>
+                    <div id="people">
+
+                    </div>
+            </div>
+            <div id="gameCrew">
+                <p>deposit characters from your crew</p>
+                    <div id="yourCrew">
+
+                    </div>
+            </div>
+            <div id="continue">
+                <button id="conti"><div id="animateOne"></div><div id="animateTwo"></div>Continue</button>
+                <button id="deposit">Deposit</button>
+            </div>
+            
+           
+            </div>
+
+            <div id="gameMiddle"><h1>Choose your destination</h1>
+                <div id="gamePl"></div>
+        </div>
+
+
+</body>
+
+</html>

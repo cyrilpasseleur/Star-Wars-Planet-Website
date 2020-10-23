@@ -1,0 +1,43 @@
+#exploreNav{
+    position: fixed;
+    display: none;
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 20px 2px #fff;
+}
+
+
+#gameNav{
+    position: fixed;
+    display: none;
+    width: 100%;
+    z-index: 9;
+    color: white;
+    padding: 20px;
+
+}
+
+#gameNav .navBut{
+position: fixed;
+    top: 5.5%;
+    right: -3%;
+}
+
+
+nav ul{
+    display: flex;
+}
+nav ul img{
+    width: 230px;  
+    cursor: pointer;
+}
+.navBut{
+    padding: 1.5vh;
+    margin: 0px;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

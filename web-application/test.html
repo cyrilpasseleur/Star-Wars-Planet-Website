@@ -1,0 +1,50 @@
+<style>
+    #app {font-family: Helvetica, Arial;}
+    h3, p { margin: 0; padding: 0; }
+    #numbers{display: flex; font-size: 13px; text-align: center; justify-content: space-around;
+    border:1px solid #d4d4d4; border-radius: 3px; padding: 5px; margin: 15px 0;}
+    #followers{display: flex; flex-direction: column;}
+    #numbers p{color: #5d5d5d;}
+    .btn{ text-decoration: none; color: #5d5d5d; border-radius: 3px; border: 1px solid #d4d4d4; 
+        display: inline-block; padding: 3px 15px; font-weight: bold; font-size: 13px;}
+</style>
+<div id="app">
+    <div id="numbers">
+        <div id="posts"><h3>20</h3><p>posts</p></div>
+        <div id="followers"><h3>165</h3><p>followers</p></div>
+        <div id="following"><h3>73</h3><p>following</p></div>
+    </div>
+    
+    <a class="btn btnFollow" href="#">Follow</a>
+</div>
+
+<script src="https://www.professormode.com/testassets/libs/jquery-3.2.1.min.js"></script>
+<script>
+    // schrijf uw code hieronder
+    $(document).ready(function(){
+
+        var countClick = 0;
+
+        $(".btn").on("click", function(e){
+
+            countClick++;
+
+            if(countClick % 2 !== 0){
+                var test = parseInt($("#followers").find("h3").text());
+                var test2 = parseInt(test + 1 );
+                $("#followers").find("h3").text(test2);
+                $(this).text("Unfollow");
+            }else{
+                var test = parseInt($("#followers").find("h3").text());
+                var test2 = parseInt(test - 1 );
+                $("#followers").find("h3").text(test2);
+                $(this).text("Follow");
+            }
+            
+        });
+        
+        
+        
+    });
+    
+</script>

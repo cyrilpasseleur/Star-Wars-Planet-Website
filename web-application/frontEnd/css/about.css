@@ -1,0 +1,29 @@
+p,h1{
+    color: white;
+    display: block;
+    position: relative;
+    font-family: font1;
+}
+
+#features {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    margin: 40px 0 ;
+    width: 40%;
+    transform: translate(-50%, -50%);
+}
+span{
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   right: 0%;
+    color: rgb(27, 221, 27);
+}
+#x{
+    color: red;
+}
+h1{
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+}

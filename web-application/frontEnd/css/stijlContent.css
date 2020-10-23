@@ -1,0 +1,151 @@
+@font-face {
+    font-family: font1;
+    src: url(../font/Roboto-Regular.ttf);
+}
+#content {
+    display: none;
+
+}
+
+body{
+    background-color: black;
+}
+
+#search {
+    outline: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 30%;
+    width: 20%;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px solid rgb(242, 174, 10);
+    border-radius: 5vh;
+    color: white;
+}
+
+.position {
+    position: fixed;
+}
+
+::placeholder {
+    color: white;
+}
+
+#gallery {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: -6;
+    transform: translate(-50%, 0%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   grid-column-gap: 6px;
+   grid-row-gap:6px;
+
+
+}
+
+#pl {
+    border: 2px solid rgb(242, 174, 10);
+    box-sizing: border-box;
+    border-radius: 5vh;
+    margin: 15px 15px;
+    flex-wrap: wrap;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#pl:hover {
+    border: 2px solid white;
+    box-shadow: 2px 2px 20px 2px #fff;
+}
+
+#pl img {
+    width: 100%;
+    border-radius: 5vh;
+}
+
+#plName {
+    position: absolute;
+    font-family: font1;
+    bottom: 10%;
+    right: 10%;
+}
+
+#overlay,#noClick {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: rgba(0, 0, 0);
+    z-index: 2;
+    opacity: 0.7;
+}
+#noClick{
+    opacity: 0;
+}
+#overlay2,#overlay3{
+    top: 20%;
+  position: fixed;
+  z-index: -1;
+    width: 100vw;
+    height: 70vh;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+38,ffffff+100&1+11,0+100 */
+background: -moz-linear-gradient(left,  rgba(0,0,0,1) 11%, rgba(0,0,0,0.7) 38%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 11%,rgba(0,0,0,0.7) 38%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(0,0,0,1) 11%,rgba(0,0,0,0.7) 38%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+#popUpText,#gameContent {
+    top: 20%;
+  position: fixed;
+    z-index: 999;
+    color: white;
+    font-family: font1;
+    width: 100vw;
+    height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+}
+
+
+#popContent{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+
+#popContent h1{
+    font-size: 2em;
+    padding: 20px 0;
+}
+#popContent p{
+   
+    padding: 18px 0;
+}
+
+#popContent img{
+   
+    width: 75px;
+}
+
+#cross{
+    position: absolute;
+    cursor: pointer;
+    width: 30px;
+    top: -23%;
+    right: 5%;
+}

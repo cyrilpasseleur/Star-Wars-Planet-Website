@@ -1,0 +1,84 @@
+#animateOne{
+  height: 8px;
+  width: 8px;
+  background: white;
+border-radius: 1em;
+  position: absolute;
+ top: 0%;
+ left: 0%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+}
+
+#animateTwo{
+  height: 8px;
+  width: 8px;
+  background: white;
+border-radius: 1em;
+  position: absolute;
+ top: 100%;
+ left: 100%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes One {
+  0%   {left: 0%;top: 0%;}
+  25%  {left: 100%; top: 0%;}
+  50%  {left: 100%; top: 100%;}
+  75%  {left: 0%; top: 100%;}
+  100% {left: 0%; top: 0%;}
+}
+
+@keyframes Two {
+  0%   {left: 100%;top: 100%;}
+  25%  {left: 0%; top: 100%;}
+  50%  {left: 0%; top: 0%;}
+  75%  {left: 100%; top: 0%;}
+  100% {left: 100%; top: 100%;}
+}
+
+button:hover #animateOne{
+  animation: One 5s infinite;
+  display: block;
+}
+button:hover #animateTwo{
+  animation: Two 5s infinite;
+  display: block;
+}
+
+.blink{
+  animation: blinker 1s linear;
+}
+
+@keyframes blinker {
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+
+}
